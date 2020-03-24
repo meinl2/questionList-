@@ -13,6 +13,15 @@
     margin: 0;
 }
 
-.FinishedQuiz ul li {
+.FinishedQuiz ul li svg {
+    margin-left: 10px;
+}
 
+
+.success {
+    color: rgba(161,240,69, .7);
+}
+
+.error {
+    color: rgb(211, 40, 54);
 }
