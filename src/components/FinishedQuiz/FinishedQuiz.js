@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./FinishedQuiz.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
+import Button from "../UI/Button/Button";
 
 
 const FinishedQuiz = props => {
@@ -34,7 +35,8 @@ const FinishedQuiz = props => {
             <p>Правильно {successCount} из {props.quiz.length}</p>
 
             <div>
-                <button onClick={props.onRetry}>Повторить</button>
+                <Button onClick={props.onRetry} type={'primary'}>Повторить</Button>
+                <Button  type={'success'}>Перейти в список тестов</Button>
             </div>
         </div>
     )
